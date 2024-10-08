@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   
+    <button id="dark-mode-toggle">Dark Mode</button>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#landmarks">Landmarks</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#events">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <section class="hero">
+        <h1>Welcome to City Explorer</h1>
+        <p>Discover the best landmarks, attractions, and events in the city</p>
+        <button id="explore-btn" onclick="scrollToAttractions()">Explore Now</button>
+    </section>
+
+  
+    <section id="landmarks" class="landmarks">
+        <h2>Famous Landmarks</h2>
+        <div class="landmark">
+            <img src="img/landmark1.jpg" alt="Landmark 1">
+            <h3>Landmark 1</h3>
+            <p>A historical site that has been the city's pride for centuries.</p>
+        </div>
+        <div class="landmark">
+            <img src="img/landmark2.jpg" alt="Landmark 2">
+            <h3>Landmark 2</h3>
+            <p>An iconic building that represents the modern architecture of the city.</p>
+        </div>
+        <div class="landmark">
+            <img src="img/landmark3.jpg" alt="Landmark 3">
+            <h3>Landmark 3</h3>
+            <p>A beautiful park that attracts tourists from all over the world.</p>
+        </div>
+    </section>
+
+    <section id="attractions" class="attractions">
+        <h2>Popular Attractions</h2>
+        <div class="attraction-grid">
+            <div class="attraction-card">
+                <img src="img/att-img1.jpg" alt="Amusement park">
+                <h3>Attraction 1</h3>
+                <p>Enjoy a thrilling ride at the famous amusement park.</p>
+                <button class="more-info">More Info</button>
+            </div>
+            <div class="attraction-card">
+                <img src="img/att-img2.jpg" alt="Botanical garden">
+                <h3>Attraction 2</h3>
+                <p>Experience the beauty of the city's largest botanical garden.</p>
+                <button class="more-info">More Info</button>
+            </div>
+            <div class="attraction-card">
+                <img src="img/att-img3.jpg" alt="Historic museum">
+                <h3>Attraction 3</h3>
+                <p>Visit the historic museum showcasing local art and culture.</p>
+                <button class="more-info">More Info</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-timeline">
+            <div class="event">
+                <h3>Event 1</h3>
+                <p>Date: November 12, 2024 - A city-wide marathon with thousands of participants.</p>
+            </div>
+            <div class="event">
+                <h3>Event 2</h3>
+                <p>Date: December 5, 2024 - A grand food festival showcasing local cuisine.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 City Explorer.SSK-23.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script>
+      
+        function scrollToAttractions() {
+            const attractionsSection = document.getElementById('attractions');
+            attractionsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
