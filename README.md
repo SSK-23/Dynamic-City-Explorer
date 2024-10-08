@@ -1,4 +1,4 @@
-# City Explorer
+# Dynamic City Explorer
 
 ## Features
 
